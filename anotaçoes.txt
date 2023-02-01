@@ -1,2 +1,4 @@
 site para imagem ficar mais leve: tinypng.com
 sugestao de livro: não me faça pensar
+sugestao de canal no yt: kevin powell
+biblioteca boa para importar: https://michalsnik.github.io/aos/

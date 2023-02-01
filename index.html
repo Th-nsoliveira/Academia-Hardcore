@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+   
     <title>Academia HardCore</title>
 </head>
 
@@ -42,11 +44,11 @@
     <div class="hero-section">
 
         <div class="container">
-            <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+            <h1 data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur ligula ut ornare. Pellentesque vulputate dictum nibh eget tempus. Integer accumsan tellus sed massa faucibus, in eleifend lorem placerat.</p>
+            <p data-aos="fade-right" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur ligula ut ornare. Pellentesque vulputate dictum nibh eget tempus. Integer accumsan tellus sed massa faucibus, in eleifend lorem placerat.</p>
 
-            <a href="#">Saiba mais</a>
+            <a href="#" data-aos="fade-right" data-aos-delay="600">Saiba mais</a>
         </div>
         
     </div><!--fim da hero-->
@@ -54,11 +56,11 @@
     
     <div class="container nossa-academia" id="nossa-academia"><!--meio de colocar 2 classes em 1-->
 
-            <div class="imagem-aluno">
+            <div class="imagem-aluno" data-aos="fade-right">
                 <img src="img/aluno.jpg" alt="aluno">
             </div>
 
-            <div class="textos"><!--div com os textos-->
+            <div class="textos" data-aos="fade-up" data-aos-delay="300"><!--div com os textos-->
                 <h2>Nossa Academia</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, ac lacinia lorem pellentesque id. Morbi tincidunt malesuada vestibulum. Praesent at diam eros. Integer tempus vitae urna et rhoncus. Proin congue turpis ac felis tincidunt congue. Duis tincidunt dui eu malesuada convallis. In vel est feugiat, interdum ante iaculis, ultricies turpis. 
@@ -78,7 +80,7 @@
         
         <div class="container">
 
-            <div class="conteudo-faca-parte">
+            <div class="conteudo-faca-parte" data-aos="fade-right">
                 <h2>Faça parte do time</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, ac lacinia lorem pellentesque id. Morbi tincidunt malesuada vestibulum. Praesent at diam eros. Integer tempus vitae urna et rhoncus. Proin congue turpis ac felis tincidunt congue. Duis tincidunt dui eu malesuada convallis. In vel est feugiat, interdum ante iaculis, ultricies turpis. 
@@ -103,7 +105,7 @@
 
             <div class="flex-card">
 
-                <div class="card-plano">
+                <div class="card-plano" data-aos="fade-up">
                     <h3>Plano Mensal</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$64,90</span>
@@ -117,7 +119,7 @@
                     <a href="#" class="btn btn-outline btn-block">Assine agora</a>
                 </div>
 
-                <div class="card-plano destaque">
+                <div class="card-plano destaque" data-aos="fade-up" data-aos-delay="300">
                     <h3>Plano Anual</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$49,90</span>
@@ -132,7 +134,7 @@
                 </div>
 
 
-                <div class="card-plano">
+                <div class="card-plano" data-aos="fade-up" data-aos-delay="600">
                     <h3>Plano Semestral</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$54,90</span>
@@ -187,5 +189,15 @@
             </div>
        </div>   
     </div><!--fim do footer-->
+
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:50,
+            once:true      
+        });
+      </script>
+
 </body>
 </html>
