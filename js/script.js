@@ -5,3 +5,8 @@ btnMenu.addEventListener('click', function(){
     menu.classList.toggle('menu-open')
     btnMenu.classList.toggle('x')
 })
+
+menu.addEventListener('click', function(){
+    menu.classList.remove('menu-open')
+    btnMenu.classList.toggle('x')
+})

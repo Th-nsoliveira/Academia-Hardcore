@@ -74,9 +74,21 @@ p{
     color: var(--contrast);
 }
 
+.bx-wrapper{/*retirando a borda padrao da biblioteca importada, essa classe faz parte da biblioteca*/
+    border: none;
+    box-shadow: none;
+}
+
+.bg-1{
+    background-image: url(../img/background.jpg);
+}
+
+.bg-2{
+background-image: url(../img/background-2.jpg);
+}
+
 .hero-section{
     height: 625px;
-    background-image:url("../img/background.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -191,6 +203,12 @@ posiçao fixa em relaçao ao body;
     border-radius: 3px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s !important; /*velocidade em que o hover e as coisas sao ativada e modificadas*/
+}
+
+.card-plano:hover{
+    background-color:rgba(0, 0, 0, 0.5) ;
+    transform: scale(1.05) !important;/*fazer o quadrado subir*/
 }
 
 h3{
@@ -254,12 +272,6 @@ ul{
     background-color: black;
 }
 
-.card-plano:hover{
-    background-color:rgba(0, 0, 0, 0.5) ;
-    transform: scale(1.05);/*fazer o quadrado subir*/
-    transition: 0.3s; /*velocidade em que o hover e as coisas sao ativada e modificadas*/
-}
-
 .fale-conosco{
     padding: 100px 0;
     display: flex;
@@ -284,6 +296,7 @@ ul{
     /*Quando coloca a largura de 100% ela ainda sofre alteraçao do padding e do border*/
     box-sizing: border-box;
     /*o box sizing faz com que o padding e a borda nao modifiquem as dimensoes do elemento*/
+    text-transform: none;
 }
 
 .conteudo-form textarea{
@@ -291,8 +304,9 @@ ul{
 }
 
 
-::placeholder{
+ ::placeholder{   /*placeholder e oq fica dentro da caixa po padrao*/
     color: #666666;
+    text-transform: uppercase;
 }
 
 .rodape{

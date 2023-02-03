@@ -9,7 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css"> <!--colocar sempre seu css por ultimo-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto:true,
+            pause:8000
+
+          });
+        });
+      </script>
    
     <title>Academia HardCore</title>
 </head>
@@ -17,7 +30,7 @@
 <!--alt + shift + F   para arrumar o código-->
 <body>
 
-    <div class="header">
+<header class="header">
 
         <div class="container"> <!--usado para alinhar o codigo no centro-->
             
@@ -31,36 +44,49 @@
                 <div class="bar"></div>
             </div>
 
-            <div class="menu">
+            <nav class="menu">
                 <a href="#">Início</a>
                 <a href="#nossa-academia">Nossa Academia</a>
                 <a href="#planos">Planos</a>
                 <a href="#fale">Fale conosco</a>
-            </div>
+            </nav>
         </div> 
 
-    </div><!--fim do header-->
+</header>><!--fim do header-->
 
-    <div class="hero-section">
+
+    <div class="slider">
+        <div class="hero-section bg-1">
 
         <div class="container">
-            <h1 data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur</h1>
+            <h1>Bem vindo a HardCore !</h1>
 
-            <p data-aos="fade-right" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur ligula ut ornare. Pellentesque vulputate dictum nibh eget tempus. Integer accumsan tellus sed massa faucibus, in eleifend lorem placerat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur ligula ut ornare. Pellentesque vulputate dictum nibh eget tempus. Integer accumsan tellus sed massa faucibus, in eleifend lorem placerat.</p>
 
-            <a href="#" data-aos="fade-right" data-aos-delay="600">Saiba mais</a>
+            <a href="#nossa-academia">Saiba mais</a>
         </div>
         
-    </div><!--fim da hero-->
+        </div><!--fim da hero-->
+        <div class="hero-section bg-2">
 
+            <div class="container">
+                <h1>Temos unidades em todo Brasil</h1>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla consectetur ligula ut ornare. Pellentesque vulputate dictum nibh eget tempus. Integer accumsan tellus sed massa faucibus, in eleifend lorem placerat.</p>
+    
+                <a href="#">nossas unidades</a>
+            </div>
+            
+        </div>
+    </div>
     
     <div class="container nossa-academia" id="nossa-academia"><!--meio de colocar 2 classes em 1-->
 
-            <div class="imagem-aluno" data-aos="fade-right">
+            <div class="imagem-aluno">
                 <img src="img/aluno.jpg" alt="aluno">
             </div>
 
-            <div class="textos" data-aos="fade-up" data-aos-delay="300"><!--div com os textos-->
+            <div class="textos"><!--div com os textos-->
                 <h2>Nossa Academia</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, ac lacinia lorem pellentesque id. Morbi tincidunt malesuada vestibulum. Praesent at diam eros. Integer tempus vitae urna et rhoncus. Proin congue turpis ac felis tincidunt congue. Duis tincidunt dui eu malesuada convallis. In vel est feugiat, interdum ante iaculis, ultricies turpis. 
@@ -80,7 +106,7 @@
         
         <div class="container">
 
-            <div class="conteudo-faca-parte" data-aos="fade-right">
+            <div class="conteudo-faca-parte">
                 <h2>Faça parte do time</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, ac lacinia lorem pellentesque id. Morbi tincidunt malesuada vestibulum. Praesent at diam eros. Integer tempus vitae urna et rhoncus. Proin congue turpis ac felis tincidunt congue. Duis tincidunt dui eu malesuada convallis. In vel est feugiat, interdum ante iaculis, ultricies turpis. 
@@ -96,7 +122,7 @@
     </div><!--fim do faça parte-->
 
 
-    <div class="planos" id="planos">
+    <section class="planos" id="planos">
         <div class="container">
 
             <h2>Nossos Planos</h2>
@@ -105,7 +131,7 @@
 
             <div class="flex-card">
 
-                <div class="card-plano" data-aos="fade-up">
+                <article class="card-plano" data-aos="fade-up">
                     <h3>Plano Mensal</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$64,90</span>
@@ -117,9 +143,9 @@
                         <li>interdum arcuultrices posuere</li>
                     </ul>
                     <a href="#" class="btn btn-outline btn-block">Assine agora</a>
-                </div>
+                </article>
 
-                <div class="card-plano destaque" data-aos="fade-up" data-aos-delay="300">
+                <article class="card-plano destaque" data-aos="fade-up" data-aos-delay="300">
                     <h3>Plano Anual</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$49,90</span>
@@ -131,10 +157,10 @@
                         <li>interdum arcuultrices posuere</li>
                     </ul>
                     <a href="#" class="btn btn-fill btn-block">Assine agora</a>
-                </div>
+                </article>
 
 
-                <div class="card-plano" data-aos="fade-up" data-aos-delay="600">
+                <article class="card-plano" data-aos="fade-up" data-aos-delay="600">
                     <h3>Plano Semestral</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor interdum arcu, </p>
                     <span class="preco">R$54,90</span>
@@ -146,11 +172,11 @@
                         <li>interdum arcuultrices posuere</li>
                     </ul>
                     <a href="#" class="btn btn-outline btn-block">Assine agora</a>
-                </div>
+                </article>
 
             </div>
         </div>
-    </div><!--fim da div planos-->
+    </section><!--fim da div planos-->
 
 
     <div class="container fale-conosco" id="fale">
@@ -174,7 +200,7 @@
 
     </div><!--fim do fale conosco-->
 
-    <div class="footer">
+    <footer class="footer">
 
         <div class="container">
 
@@ -187,14 +213,15 @@
             <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.svg" alt="twitter"></a>
             <a href="https://youtube.com/" target="_blank"><img src="./img/youtube.svg" alt="twitter"></a>
             </div>
-       </div>   
-    </div><!--fim do footer-->
+       </div>  
+
+    </footer><!--fim do footer-->
 
     <script src="js/script.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init({
-            offset:50,
+            offset:-500,
             once:true      
         });
       </script>
