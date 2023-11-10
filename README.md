@@ -1,2 +1,1 @@
-#Academia Hardcore
-link do site: https://th-nsoliveira.github.io/Academia-Hardcore/
+Link do site: https://th-nsoliveira.github.io/Academia-Hardcore/
